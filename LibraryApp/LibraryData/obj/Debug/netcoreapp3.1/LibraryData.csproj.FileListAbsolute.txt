@@ -1,0 +1,20 @@
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.deps.json
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.dll
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.csprojAssemblyReference.cache
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.AssemblyInfoInputs.cache
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.AssemblyInfo.cs
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.runtimeconfig.json
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.runtimeconfig.dev.json
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.pdb
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.dll
+C:\Users\yabej\Documents\C# .NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.pdb
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.csprojAssemblyReference.cache
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.AssemblyInfoInputs.cache
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.AssemblyInfo.cs
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.dll
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\obj\Debug\netcoreapp3.1\LibraryData.pdb
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.deps.json
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.runtimeconfig.json
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.runtimeconfig.dev.json
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.dll
+C:\Users\yabej\Documents\CSharp.NET\LibraryApp\LibraryData\bin\Debug\netcoreapp3.1\LibraryData.pdb

@@ -1,0 +1,103 @@
+﻿@page
+@model LibraryApp.DetailModel
+
+<div class="container">
+    <div class="page-header clearfix detailHeading">
+        <h2 class="text-muted">View Library Item</h2>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <img class="detailImage" src="@Model.modelDetail.ImageUrl" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p id="itemTitle">@Model.modelDetail.Title</p>
+            <p id="itemAuthor">@Model.modelDetail.AuthorOrDirector</p>
+            <p id="itemStatus">@Model.modelDetail.Status</p>
+            <p id="itemType">@Model.modelDetail.Type</p>
+            <p id="itemLocation">@Model.modelDetail.CurrentLocation</p>
+
+            @if (Model.modelDetail.Status == "Lost")
+            {
+                <p>This item has been lost. It cannot be checked</p>
+                <p><a class="btn btn-lg btn-danger" role="button" asp-page-handler="MarkFound" method="post" asp-route-id="@Model.modelDetail.AssetId">Mark Found</a></p>
+            }
+
+            @if (Model.modelDetail.Status == "Checked Out")
+            {
+                <p id="itemPatron">Checked Out By: @Model.modelDetail.PatronName</p>
+                <p><a class="btn btn-lg btn-success" role="button" asp-page-handler="CheckIn" method="get" asp-route-assetid="@Model.modelDetail.AssetId">Check In</a></p>
+                <p><a class="btn btn-lg btn-warning" role="button" asp-page="/Catalog/Hold"  asp-route-id="@Model.modelDetail.AssetId">Place Hold</a></p>
+            }
+
+            @if (Model.modelDetail.Status == "Available")
+            {
+                <p><a class="btn btn-lg btn-info" role="button" asp-page="/Catalog/Checkout"  asp-route-id="@Model.modelDetail.AssetId">Checkout</a></p>
+            }
+        </div>
+        <div class="col-md-4 detailInfo">
+            <table>
+                <tr>
+                    <td class="itemLabel">ISBN: </td>
+                    <td class="itemValue">@Model.modelDetail.ISBN</td>
+                </tr>
+                <tr>
+                    <td class="itemLabel">Call Number: </td>
+                    <td class="itemValue">@Model.modelDetail.DeweyCallNumber</td>
+                </tr>
+                <tr>
+                    <td class="itemLabel">Replacement Cost: </td>
+                    <td class="itemValue">@Model.modelDetail.Cost</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <h4>Checkout History</h4>
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>Date Loaned</th>
+                    <th>Date Returned</th>
+                    <th>Card Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var checkout in Model.modelDetail.CheckoutHistory)
+                {
+                    <tr>
+                        <td>@checkout.CheckedOut</td>
+                        <td>@checkout.CheckedIn</td>
+                        <td>@checkout.LibraryCard.Id</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-6">
+        <h4>Current Holds</h4>
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>Hold Placed</th>
+                    <th>Patron</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var hold in Model.modelDetail.CurrentHolds)
+                {
+                    <tr>
+                        <td>@hold.HoldPlaced</td>
+                        <td>@hold.PatronName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
